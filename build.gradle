@@ -1,0 +1,27 @@
+group 'io.celox'
+version '0.0.1'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+def formatVersionCode(int versionCode) {
+    String res = String.valueOf(versionCode)
+    switch (res.length()) {
+        case 1:
+            return "0.0." + res
+        case 2:
+            return ("0." + res.charAt(0) + ".") + res.charAt(1)
+        case 3:
+            return "" + res.charAt(0) + ((".") + res.charAt(1)) + (".") + res.charAt(2)
+    }
+    return "-1"
+}

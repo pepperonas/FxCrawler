@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FxCrawler.iml" filepath="$PROJECT_DIR$/.idea/modules/FxCrawler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FxCrawler_main.iml" filepath="$PROJECT_DIR$/.idea/modules/FxCrawler_main.iml" group="FxCrawler" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FxCrawler_test.iml" filepath="$PROJECT_DIR$/.idea/modules/FxCrawler_test.iml" group="FxCrawler" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib.iml" filepath="$PROJECT_DIR$/.idea/modules/lib.iml" group="lib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/lib_main.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/lib_main.iml" group="lib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/lib/lib_test.iml" filepath="$PROJECT_DIR$/.idea/modules/lib/lib_test.iml" group="lib" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mobilede.iml" filepath="$PROJECT_DIR$/.idea/modules/mobilede.iml" group="mobilede" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mobilede/mobilede_main.iml" filepath="$PROJECT_DIR$/.idea/modules/mobilede/mobilede_main.iml" group="mobilede" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mobilede/mobilede_test.iml" filepath="$PROJECT_DIR$/.idea/modules/mobilede/mobilede_test.iml" group="mobilede" />
+    </modules>
+  </component>
+</project>
