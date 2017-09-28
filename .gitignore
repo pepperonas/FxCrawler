@@ -67,7 +67,7 @@ freeline_project_description.json
 .mtj.tmp/
 
 # Package Files #
-*.jar
+#*.jar
 *.war
 *.ear
 *.zip
