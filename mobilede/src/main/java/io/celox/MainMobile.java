@@ -144,11 +144,17 @@ public class MainMobile extends Application {
     }
 
     private static void tryJsoup2() throws IOException {
-        Document doc = Jsoup.connect("https://www.mobile.de").data("query", "Java")
-                .userAgent("Mozilla")
-                .cookie("auth", "token")
+        //        Document doc = Jsoup.connect("https://suchen.mobile.de")
+        //                .data("query", "Java")
+        //                .userAgent("Mozilla")
+        //                .cookie("auth", "token")
+        //                .timeout(3000)
+        //                .post();
+        Document doc = Jsoup.connect("https://suchen.mobile.de/fahrzeuge/search.html?dam=0&isSearchRequest=true&ms=3500;45&vc=Car")
+                .userAgent("Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:25.0) Gecko/20100101 Firefox/25.0")
+                .referrer("http://www.google.com")
                 .timeout(3000)
-                .post();
+                .get();
 
         Elements links = doc.getAllElements();
 
@@ -157,7 +163,7 @@ public class MainMobile extends Application {
             String linkHref = link.attr("href");
             String linkText = link.text();
             if (linkHref != null && !linkHref.isEmpty()) {
-                Log.i(TAG, "link(" + (ctr++) + ")" + linkHref);
+                Log.i(TAG, "link(" + (ctr++) + "): " + linkText + " --- " + linkHref);
             }
         }
     }
